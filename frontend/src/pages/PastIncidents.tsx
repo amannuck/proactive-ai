@@ -15,6 +15,39 @@ interface PastIncident {
   critical_supplies_depleted: string[];
 }
 
+function normalizeTagList(value: unknown): string[] {
+  if (value == null) return [];
+  if (Array.isArray(value)) {
+    return value
+      .map((v) => String(v).trim())
+      .filter(Boolean);
+  }
+
+  const raw = String(value).trim();
+  if (!raw) return [];
+
+  if (raw.startsWith("[") && raw.endsWith("]")) {
+    try {
+      const parsed = JSON.parse(raw);
+      if (Array.isArray(parsed)) {
+        return parsed
+          .map((v) => String(v).trim())
+          .map((s) => s.replace(/^"|"$/g, ""))
+          .filter(Boolean);
+      }
+    } catch {
+      // fall back to splitting
+    }
+  }
+
+  return raw
+    .split(",")
+    .map((s) => s.trim())
+    .map((s) => s.replace(/^\[\s*"?/, "").replace(/"?\s*\]$/g, ""))
+    .map((s) => s.replace(/^"|"$/g, ""))
+    .filter(Boolean);
+}
+
 function mapEventToIncident(row: EventRow): PastIncident {
   return {
     event_id: row.event_id,
@@ -22,12 +55,8 @@ function mapEventToIncident(row: EventRow): PastIncident {
     severity_index: row.severity_index || 5,
     date: row.date,
     patient_volume_spike: row.patient_volume_spike || 0,
-    top_clinical_categories: row.top_clinical_categories 
-      ? String(row.top_clinical_categories).split(",").map(s => s.trim())
-      : [],
-    critical_supplies_depleted: row.critical_supplies_depleted
-      ? String(row.critical_supplies_depleted).split(",").map(s => s.trim())
-      : [],
+    top_clinical_categories: normalizeTagList(row.top_clinical_categories),
+    critical_supplies_depleted: normalizeTagList(row.critical_supplies_depleted),
   };
 }
 

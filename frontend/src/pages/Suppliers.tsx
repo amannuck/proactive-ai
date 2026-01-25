@@ -40,6 +40,8 @@ const Suppliers = () => {
   const { data: apiData, loading, error } = useApi(() => getAllSuppliers(), []);
   const { data: inventoryData } = useApi(() => getInventoryForOrdering(), []);
   
+  const [searchQuery, setSearchQuery] = useState("");
+  
   const [orderDialogOpen, setOrderDialogOpen] = useState(false);
   const [selectedSupplier, setSelectedSupplier] = useState<Supplier | null>(null);
   const [selectedItem, setSelectedItem] = useState<InventoryForOrderingRow | null>(null);
@@ -67,6 +69,22 @@ const Suppliers = () => {
   const avgLeadTime = suppliers.length > 0
     ? Math.round(suppliers.reduce((sum, s) => sum + s.lead_time_days, 0) / suppliers.length)
     : 0;
+
+  const normalizedQuery = searchQuery.trim().toLowerCase();
+  const filteredSuppliers = normalizedQuery
+    ? suppliers.filter((s) => {
+        const haystack = [
+          s.name,
+          s.category,
+          s.supplier_id,
+          ...(s.primary_products || []),
+        ]
+          .filter(Boolean)
+          .join(" ")
+          .toLowerCase();
+        return haystack.includes(normalizedQuery);
+      })
+    : suppliers;
 
   // Get items available from a specific supplier
   const getSupplierItems = (supplierId: string) => {
@@ -184,12 +202,17 @@ const Suppliers = () => {
         {/* Search */}
         <div className="relative">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
-          <Input placeholder="Search suppliers by name, category, or product..." className="pl-9" />
+          <Input
+            placeholder="Search suppliers by name, category, or product..."
+            className="pl-9"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+          />
         </div>
 
         {/* Suppliers Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-          {suppliers.map((supplier) => (
+          {filteredSuppliers.map((supplier) => (
             <div
               key={supplier.supplier_id}
               className="bg-card rounded-xl border border-border shadow-card p-5 hover:shadow-lg transition-shadow"

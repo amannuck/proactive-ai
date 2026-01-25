@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { DashboardLayout } from "@/components/layout/DashboardLayout";
 import { Package, Search, Filter, AlertTriangle, TrendingDown, ChevronDown, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -49,8 +50,16 @@ const categories = ["All Categories", "IV Fluids", "Trauma Supplies", "PPE", "Me
 
 const Inventory = () => {
   const { data: apiData, loading, error } = useApi(() => getAllInventory(), []);
+  const [searchQuery, setSearchQuery] = useState("");
   
   const inventoryItems: InventoryItem[] = apiData?.map(mapApiToInventoryItem) || [];
+  const normalizedQuery = searchQuery.trim().toLowerCase();
+  const filteredInventoryItems = normalizedQuery
+    ? inventoryItems.filter((item) => {
+        const haystack = [item.name, item.id, item.category].filter(Boolean).join(" ").toLowerCase();
+        return haystack.includes(normalizedQuery);
+      })
+    : inventoryItems;
   const criticalCount = inventoryItems.filter((i) => i.status === "critical").length;
   const lowCount = inventoryItems.filter((i) => i.status === "low").length;
 
@@ -108,7 +117,12 @@ const Inventory = () => {
         <div className="flex flex-col sm:flex-row gap-3">
           <div className="relative flex-1">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
-            <Input placeholder="Search inventory..." className="pl-9" />
+            <Input
+              placeholder="Search inventory..."
+              className="pl-9"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+            />
           </div>
           <Button variant="outline" className="gap-2">
             <Filter className="w-4 h-4" />
@@ -136,7 +150,7 @@ const Inventory = () => {
                 </tr>
               </thead>
               <tbody className="divide-y divide-border">
-                {inventoryItems.map((item) => {
+                {filteredInventoryItems.map((item) => {
                   const status = statusConfig[item.status];
                   const percentFull = (item.currentStock / item.maxStock) * 100;
 
