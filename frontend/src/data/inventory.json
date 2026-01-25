@@ -1,0 +1,98 @@
+[
+  {
+    "id": "1",
+    "name": "Lactated Ringer's 1L",
+    "category": "IV Fluids",
+    "currentStock": 450,
+    "maxStock": 1000,
+    "unit": "bags",
+    "reorderPoint": 300,
+    "daysUntilDepletion": 3,
+    "status": "low",
+    "lastRestocked": "2 days ago"
+  },
+  {
+    "id": "2",
+    "name": "Normal Saline 500mL",
+    "category": "IV Fluids",
+    "currentStock": 400,
+    "maxStock": 1000,
+    "unit": "bags",
+    "reorderPoint": 250,
+    "daysUntilDepletion": 4,
+    "status": "healthy",
+    "lastRestocked": "1 day ago"
+  },
+  {
+    "id": "3",
+    "name": "Advanced Trauma Kit",
+    "category": "Trauma Supplies",
+    "currentStock": 18,
+    "maxStock": 50,
+    "unit": "kits",
+    "reorderPoint": 20,
+    "daysUntilDepletion": 2,
+    "status": "critical",
+    "lastRestocked": "5 days ago"
+  },
+  {
+    "id": "4",
+    "name": "Chest Seal (Occlusive)",
+    "category": "Trauma Supplies",
+    "currentStock": 27,
+    "maxStock": 50,
+    "unit": "units",
+    "reorderPoint": 15,
+    "daysUntilDepletion": 3,
+    "status": "low",
+    "lastRestocked": "3 days ago"
+  },
+  {
+    "id": "5",
+    "name": "N95 Respirator Mask",
+    "category": "PPE",
+    "currentStock": 3500,
+    "maxStock": 5000,
+    "unit": "units",
+    "reorderPoint": 1500,
+    "daysUntilDepletion": 8,
+    "status": "healthy",
+    "lastRestocked": "Today"
+  },
+  {
+    "id": "6",
+    "name": "Surgical Gloves (M)",
+    "category": "PPE",
+    "currentStock": 8000,
+    "maxStock": 10000,
+    "unit": "pairs",
+    "reorderPoint": 3000,
+    "daysUntilDepletion": 12,
+    "status": "healthy",
+    "lastRestocked": "Today"
+  },
+  {
+    "id": "7",
+    "name": "Epinephrine 1mg/mL",
+    "category": "Medications",
+    "currentStock": 85,
+    "maxStock": 200,
+    "unit": "vials",
+    "reorderPoint": 50,
+    "daysUntilDepletion": 5,
+    "status": "healthy",
+    "lastRestocked": "1 day ago"
+  },
+  {
+    "id": "8",
+    "name": "Oxygen Tank (Size E)",
+    "category": "Oxygen Supplies",
+    "currentStock": 12,
+    "maxStock": 40,
+    "unit": "tanks",
+    "reorderPoint": 15,
+    "daysUntilDepletion": 2,
+    "status": "critical",
+    "lastRestocked": "4 days ago"
+  }
+]

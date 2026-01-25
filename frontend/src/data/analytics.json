@@ -1,0 +1,25 @@
+{
+  "weeklyData": [
+    { "day": "Mon", "patients": 145, "predicted": 140 },
+    { "day": "Tue", "patients": 162, "predicted": 155 },
+    { "day": "Wed", "patients": 178, "predicted": 170 },
+    { "day": "Thu", "patients": 195, "predicted": 185 },
+    { "day": "Fri", "patients": 210, "predicted": 200 },
+    { "day": "Sat", "patients": 188, "predicted": 180 },
+    { "day": "Sun", "patients": 156, "predicted": 160 }
+  ],
+  "categoryData": [
+    { "category": "Trauma", "value": 28, "color": "hsl(var(--chart-trauma))" },
+    { "category": "Respiratory", "value": 24, "color": "hsl(var(--chart-respiratory))" },
+    { "category": "Heat-related", "value": 18, "color": "hsl(var(--chart-heat))" },
+    { "category": "Infectious", "value": 30, "color": "hsl(var(--chart-infectious))" }
+  ],
+  "accuracyData": [
+    { "month": "Jan", "accuracy": 87 },
+    { "month": "Feb", "accuracy": 89 },
+    { "month": "Mar", "accuracy": 91 },
+    { "month": "Apr", "accuracy": 88 },
+    { "month": "May", "accuracy": 92 },
+    { "month": "Jun", "accuracy": 94 }
+  ]
+}

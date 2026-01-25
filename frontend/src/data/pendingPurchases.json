@@ -1,0 +1,101 @@
+[
+  {
+    "id": "1",
+    "item": "Advanced Trauma Kits",
+    "quantity": 25,
+    "unit": "kits",
+    "estimatedCost": 8750,
+    "reason": "Predicted MVA surge from snowstorm",
+    "urgency": "critical",
+    "requestedAt": "Today, 1:15 PM",
+    "linkedAlert": "Severe Snowstorm Warning",
+    "confidence": 89,
+    "suppliers": [
+      { "name": "MedSupply Direct", "price": 8500, "deliveryTime": "Same day", "reliability": 98, "inStock": true },
+      { "name": "Healthcare Essentials", "price": 8750, "deliveryTime": "Next day", "reliability": 95, "inStock": true },
+      { "name": "Regional Medical Supply", "price": 9200, "deliveryTime": "2-3 days", "reliability": 92, "inStock": true }
+    ]
+  },
+  {
+    "id": "2",
+    "item": "N95 Respirator Masks",
+    "quantity": 2000,
+    "unit": "units",
+    "estimatedCost": 1200,
+    "reason": "Flu outbreak protection for staff",
+    "urgency": "high",
+    "requestedAt": "Today, 11:00 AM",
+    "linkedAlert": "Flu Outbreak - Regional Spread",
+    "confidence": 78,
+    "suppliers": [
+      { "name": "MedSupply Direct", "price": 1150, "deliveryTime": "Same day", "reliability": 98, "inStock": true },
+      { "name": "PPE Wholesale", "price": 1100, "deliveryTime": "Next day", "reliability": 88, "inStock": true },
+      { "name": "Healthcare Essentials", "price": 1250, "deliveryTime": "Same day", "reliability": 95, "inStock": true }
+    ]
+  },
+  {
+    "id": "3",
+    "item": "Portable Cooling Blankets",
+    "quantity": 20,
+    "unit": "units",
+    "estimatedCost": 6000,
+    "reason": "Heat wave treatment capacity",
+    "urgency": "high",
+    "requestedAt": "Today, 9:30 AM",
+    "linkedAlert": "FIFA World Cup Final + Extreme Heat",
+    "confidence": 94,
+    "suppliers": [
+      { "name": "Healthcare Essentials", "price": 5800, "deliveryTime": "Same day", "reliability": 95, "inStock": true },
+      { "name": "MedSupply Direct", "price": 6200, "deliveryTime": "Next day", "reliability": 98, "inStock": false },
+      { "name": "Emergency Med Co", "price": 5500, "deliveryTime": "2 days", "reliability": 85, "inStock": true }
+    ]
+  },
+  {
+    "id": "4",
+    "item": "IV Fluid Bags (Normal Saline)",
+    "quantity": 800,
+    "unit": "units",
+    "estimatedCost": 3200,
+    "reason": "Dehydration case surge preparation",
+    "urgency": "medium",
+    "requestedAt": "Today, 8:45 AM",
+    "linkedAlert": "FIFA World Cup Final + Extreme Heat",
+    "confidence": 94,
+    "suppliers": [
+      { "name": "Regional Medical Supply", "price": 3100, "deliveryTime": "Same day", "reliability": 92, "inStock": true },
+      { "name": "MedSupply Direct", "price": 3200, "deliveryTime": "Same day", "reliability": 98, "inStock": true }
+    ]
+  },
+  {
+    "id": "5",
+    "item": "Emergency Splint Kits",
+    "quantity": 50,
+    "unit": "kits",
+    "estimatedCost": 2500,
+    "reason": "Trauma preparedness for storm",
+    "urgency": "medium",
+    "requestedAt": "Yesterday, 4:30 PM",
+    "linkedAlert": "Severe Snowstorm Warning",
+    "confidence": 89,
+    "suppliers": [
+      { "name": "MedSupply Direct", "price": 2400, "deliveryTime": "Next day", "reliability": 98, "inStock": true },
+      { "name": "Trauma Supply Co", "price": 2350, "deliveryTime": "2 days", "reliability": 90, "inStock": true }
+    ]
+  },
+  {
+    "id": "6",
+    "item": "Oxygen Concentrators",
+    "quantity": 8,
+    "unit": "units",
+    "estimatedCost": 12000,
+    "reason": "Respiratory surge capacity",
+    "urgency": "low",
+    "requestedAt": "Yesterday, 2:00 PM",
+    "linkedAlert": "Flu Outbreak - Regional Spread",
+    "confidence": 78,
+    "suppliers": [
+      { "name": "Healthcare Essentials", "price": 11800, "deliveryTime": "3-5 days", "reliability": 95, "inStock": true },
+      { "name": "MedSupply Direct", "price": 12200, "deliveryTime": "2-3 days", "reliability": 98, "inStock": false }
+    ]
+  }
+]

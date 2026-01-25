@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* Proactive Pulse - Healthcare Command Center Design System */
+
+@layer base {
+  :root {
+    /* Core backgrounds - clean clinical whites and grays */
+    --background: 210 20% 98%;
+    --foreground: 215 25% 15%;
+
+    /* Card surfaces */
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    /* Popover */
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    /* Primary - Medical Teal */
+    --primary: 187 72% 38%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary - Soft slate */
+    --secondary: 210 16% 93%;
+    --secondary-foreground: 215 25% 25%;
+
+    /* Muted surfaces */
+    --muted: 210 14% 96%;
+    --muted-foreground: 215 14% 45%;
+
+    /* Accent - Lighter teal */
+    --accent: 187 55% 95%;
+    --accent-foreground: 187 72% 28%;
+
+    /* Destructive - Medical alert red */
+    --destructive: 0 72% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Border and inputs */
+    --border: 214 20% 90%;
+    --input: 214 20% 90%;
+    --ring: 187 72% 38%;
+
+    --radius: 0.75rem;
+
+    /* Alert status colors */
+    --status-low: 152 69% 40%;
+    --status-low-bg: 152 69% 95%;
+    --status-medium: 38 92% 50%;
+    --status-medium-bg: 38 92% 95%;
+    --status-high: 0 72% 55%;
+    --status-high-bg: 0 72% 95%;
+    --status-critical: 0 84% 45%;
+    --status-critical-bg: 0 84% 94%;
+
+    /* Chart colors */
+    --chart-trauma: 0 72% 55%;
+    --chart-respiratory: 187 72% 45%;
+    --chart-heat: 38 92% 50%;
+    --chart-infectious: 152 69% 40%;
+    --chart-baseline: 215 14% 70%;
+
+    /* Sidebar */
+    --sidebar-background: 215 25% 12%;
+    --sidebar-foreground: 210 20% 90%;
+    --sidebar-primary: 187 72% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 215 20% 18%;
+    --sidebar-accent-foreground: 210 20% 95%;
+    --sidebar-border: 215 20% 20%;
+    --sidebar-ring: 187 72% 50%;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(215 25% 15% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(215 25% 15% / 0.07), 0 2px 4px -2px hsl(215 25% 15% / 0.05);
+    --shadow-lg: 0 10px 15px -3px hsl(215 25% 15% / 0.08), 0 4px 6px -4px hsl(215 25% 15% / 0.05);
+    --shadow-card: 0 1px 3px 0 hsl(215 25% 15% / 0.05), 0 1px 2px -1px hsl(215 25% 15% / 0.05);
+  }
+
+  .dark {
+    --background: 215 25% 8%;
+    --foreground: 210 20% 95%;
+
+    --card: 215 25% 12%;
+    --card-foreground: 210 20% 95%;
+
+    --popover: 215 25% 12%;
+    --popover-foreground: 210 20% 95%;
+
+    --primary: 187 65% 50%;
+    --primary-foreground: 215 25% 8%;
+
+    --secondary: 215 20% 18%;
+    --secondary-foreground: 210 20% 90%;
+
+    --muted: 215 20% 15%;
+    --muted-foreground: 215 14% 55%;
+
+    --accent: 187 40% 15%;
+    --accent-foreground: 187 65% 70%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 215 20% 20%;
+    --input: 215 20% 20%;
+    --ring: 187 65% 50%;
+
+    --status-low-bg: 152 50% 15%;
+    --status-medium-bg: 38 70% 15%;
+    --status-high-bg: 0 50% 15%;
+    --status-critical-bg: 0 60% 12%;
+
+    --sidebar-background: 215 25% 6%;
+    --sidebar-foreground: 210 20% 90%;
+    --sidebar-accent: 215 20% 12%;
+    --sidebar-border: 215 20% 15%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  /* Alert pulse animation */
+  .pulse-alert {
+    animation: pulse-alert 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  @keyframes pulse-alert {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.7;
+    }
+  }
+
+  /* Smooth card hover */
+  .card-hover {
+    @apply transition-all duration-200 ease-out;
+  }
+
+  .card-hover:hover {
+    @apply shadow-lg -translate-y-0.5;
+  }
+
+  /* Status indicators */
+  .status-dot {
+    @apply w-2.5 h-2.5 rounded-full;
+  }
+
+  .status-dot-pulse {
+    @apply relative;
+  }
+
+  .status-dot-pulse::before {
+    content: '';
+    @apply absolute inset-0 rounded-full animate-ping opacity-75;
+    background: inherit;
+  }
+
+  /* Gradient overlays */
+  .gradient-clinical {
+    background: linear-gradient(135deg, hsl(var(--primary) / 0.05) 0%, hsl(var(--accent) / 0.1) 100%);
+  }
+
+  /* Glass morphism for cards */
+  .glass-card {
+    @apply bg-card/80 backdrop-blur-sm border border-border/50;
+  }
+
+  /* Risk level badges */
+  .risk-low {
+    @apply bg-[hsl(var(--status-low-bg))] text-[hsl(var(--status-low))];
+  }
+
+  .risk-medium {
+    @apply bg-[hsl(var(--status-medium-bg))] text-[hsl(var(--status-medium))];
+  }
+
+  .risk-high {
+    @apply bg-[hsl(var(--status-high-bg))] text-[hsl(var(--status-high))];
+  }
+
+  .risk-critical {
+    @apply bg-[hsl(var(--status-critical-bg))] text-[hsl(var(--status-critical))];
+  }
+}

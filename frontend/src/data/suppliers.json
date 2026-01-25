@@ -1,0 +1,122 @@
+[
+  {
+    "supplier_id": "SUP-001",
+    "name": "MedSupply Direct",
+    "category": "IV Fluids & Solutions",
+    "contact": "orders@medsupplydirect.com",
+    "phone": "+1 (555) 123-4567",
+    "lead_time_days": 2,
+    "reliability_score": 98,
+    "primary_products": ["Lactated Ringer's", "Normal Saline", "Dextrose Solutions"],
+    "status": "active",
+    "last_order_date": "2024-01-20"
+  },
+  {
+    "supplier_id": "SUP-002",
+    "name": "TraumaCare Solutions",
+    "category": "Trauma Supplies",
+    "contact": "support@traumacare.com",
+    "phone": "+1 (555) 234-5678",
+    "lead_time_days": 1,
+    "reliability_score": 95,
+    "primary_products": ["Advanced Trauma Kits", "Chest Seals", "Tourniquets", "Hemostatic Agents"],
+    "status": "active",
+    "last_order_date": "2024-01-22"
+  },
+  {
+    "supplier_id": "SUP-003",
+    "name": "SafeGuard PPE",
+    "category": "Personal Protective Equipment",
+    "contact": "sales@safeguardppe.com",
+    "phone": "+1 (555) 345-6789",
+    "lead_time_days": 3,
+    "reliability_score": 92,
+    "primary_products": ["N95 Masks", "Surgical Gloves", "Face Shields", "Isolation Gowns"],
+    "status": "active",
+    "last_order_date": "2024-01-23"
+  },
+  {
+    "supplier_id": "SUP-004",
+    "name": "PharmaTech Distributors",
+    "category": "Medications",
+    "contact": "orders@pharmatech.com",
+    "phone": "+1 (555) 456-7890",
+    "lead_time_days": 1,
+    "reliability_score": 99,
+    "primary_products": ["Epinephrine", "Pain Management", "Antibiotics", "Emergency Medications"],
+    "status": "active",
+    "last_order_date": "2024-01-24"
+  },
+  {
+    "supplier_id": "SUP-005",
+    "name": "OxygenPro Medical",
+    "category": "Oxygen & Respiratory",
+    "contact": "service@oxygenpro.com",
+    "phone": "+1 (555) 567-8901",
+    "lead_time_days": 4,
+    "reliability_score": 88,
+    "primary_products": ["Oxygen Tanks", "Ventilator Supplies", "Nebulizers", "CPAP Equipment"],
+    "status": "active",
+    "last_order_date": "2024-01-19"
+  },
+  {
+    "supplier_id": "SUP-006",
+    "name": "OrthoCast Supplies",
+    "category": "Orthopedic Equipment",
+    "contact": "info@orthocast.com",
+    "phone": "+1 (555) 678-9012",
+    "lead_time_days": 2,
+    "reliability_score": 94,
+    "primary_products": ["Plaster Casts", "Fiberglass Casts", "Splints", "Braces"],
+    "status": "active",
+    "last_order_date": "2024-01-21"
+  },
+  {
+    "supplier_id": "SUP-007",
+    "name": "SutureTech Medical",
+    "category": "Surgical Supplies",
+    "contact": "orders@suturetech.com",
+    "phone": "+1 (555) 789-0123",
+    "lead_time_days": 2,
+    "reliability_score": 96,
+    "primary_products": ["Sutures", "Surgical Instruments", "Scalpels", "Wound Care"],
+    "status": "active",
+    "last_order_date": "2024-01-23"
+  },
+  {
+    "supplier_id": "SUP-008",
+    "name": "Emergency Diagnostics Inc",
+    "category": "Diagnostic Equipment",
+    "contact": "sales@emergencydiag.com",
+    "phone": "+1 (555) 890-1234",
+    "lead_time_days": 5,
+    "reliability_score": 90,
+    "primary_products": ["Rapid Tests", "Blood Gas Analyzers", "Point-of-Care Devices"],
+    "status": "active",
+    "last_order_date": "2024-01-18"
+  },
+  {
+    "supplier_id": "SUP-009",
+    "name": "VitalMeds Express",
+    "category": "IV Medications",
+    "contact": "urgent@vitalmeds.com",
+    "phone": "+1 (555) 901-2345",
+    "lead_time_days": 1,
+    "reliability_score": 97,
+    "primary_products": ["Pain Management IVs", "Antibiotic IVs", "Cardiac Medications"],
+    "status": "active",
+    "last_order_date": "2024-01-24"
+  },
+  {
+    "supplier_id": "SUP-010",
+    "name": "ColdChain Vaccines",
+    "category": "Vaccines & Immunizations",
+    "contact": "orders@coldchainvax.com",
+    "phone": "+1 (555) 012-3456",
+    "lead_time_days": 3,
+    "reliability_score": 93,
+    "primary_products": ["Tetanus Shots", "Flu Vaccines", "Rabies Vaccines", "Hepatitis Vaccines"],
+    "status": "active",
+    "last_order_date": "2024-01-22"
+  }
+]

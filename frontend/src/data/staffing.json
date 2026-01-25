@@ -1,0 +1,46 @@
+[
+  {
+    "time": "6:00 AM - 2:00 PM",
+    "date": "Today",
+    "severity": "moderate",
+    "shifts": [
+      { "role": "ER Physicians", "current": 6, "needed": 8, "onCall": 2 },
+      { "role": "Trauma Nurses", "current": 12, "needed": 15, "onCall": 3 },
+      { "role": "Respiratory Therapists", "current": 3, "needed": 5, "onCall": 2 },
+      { "role": "Support Staff", "current": 10, "needed": 12, "onCall": 4 }
+    ]
+  },
+  {
+    "time": "2:00 PM - 10:00 PM",
+    "date": "Today",
+    "severity": "high",
+    "shifts": [
+      { "role": "ER Physicians", "current": 8, "needed": 12, "onCall": 2 },
+      { "role": "Trauma Nurses", "current": 15, "needed": 22, "onCall": 5 },
+      { "role": "Respiratory Therapists", "current": 4, "needed": 7, "onCall": 2 },
+      { "role": "Support Staff", "current": 12, "needed": 16, "onCall": 6 }
+    ]
+  },
+  {
+    "time": "10:00 PM - 6:00 AM",
+    "date": "Tonight",
+    "severity": "critical",
+    "shifts": [
+      { "role": "ER Physicians", "current": 4, "needed": 10, "onCall": 3 },
+      { "role": "Trauma Nurses", "current": 10, "needed": 20, "onCall": 6 },
+      { "role": "Respiratory Therapists", "current": 2, "needed": 6, "onCall": 2 },
+      { "role": "Support Staff", "current": 8, "needed": 14, "onCall": 4 }
+    ]
+  },
+  {
+    "time": "6:00 AM - 2:00 PM",
+    "date": "Tomorrow",
+    "severity": "high",
+    "shifts": [
+      { "role": "ER Physicians", "current": 6, "needed": 10, "onCall": 2 },
+      { "role": "Trauma Nurses", "current": 14, "needed": 18, "onCall": 4 },
+      { "role": "Respiratory Therapists", "current": 4, "needed": 6, "onCall": 2 },
+      { "role": "Support Staff", "current": 10, "needed": 14, "onCall": 5 }
+    ]
+  }
+]

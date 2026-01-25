@@ -1,0 +1,102 @@
+[
+  {
+    "time": "6:00 AM - 10:00 AM",
+    "date": "Today",
+    "expectedVolume": 45,
+    "baselineVolume": 35,
+    "surgeLevel": "elevated",
+    "primaryCauses": ["Morning rush", "Scheduled procedures"],
+    "staffingStatus": "adequate",
+    "confidence": 92
+  },
+  {
+    "time": "10:00 AM - 2:00 PM",
+    "date": "Today",
+    "expectedVolume": 78,
+    "baselineVolume": 42,
+    "surgeLevel": "high",
+    "primaryCauses": ["Heat wave peak", "Sports event crowd"],
+    "staffingStatus": "shortage",
+    "confidence": 88
+  },
+  {
+    "time": "2:00 PM - 6:00 PM",
+    "date": "Today",
+    "expectedVolume": 95,
+    "baselineVolume": 48,
+    "surgeLevel": "critical",
+    "primaryCauses": ["Heat emergencies", "Dehydration cases", "Alcohol-related"],
+    "staffingStatus": "critical",
+    "confidence": 94
+  },
+  {
+    "time": "6:00 PM - 10:00 PM",
+    "date": "Today",
+    "expectedVolume": 82,
+    "baselineVolume": 52,
+    "surgeLevel": "high",
+    "primaryCauses": ["Post-event injuries", "Evening rush"],
+    "staffingStatus": "shortage",
+    "confidence": 85
+  },
+  {
+    "time": "10:00 PM - 2:00 AM",
+    "date": "Tonight",
+    "expectedVolume": 68,
+    "baselineVolume": 38,
+    "surgeLevel": "high",
+    "primaryCauses": ["Nightlife incidents", "Late sports crowd"],
+    "staffingStatus": "shortage",
+    "confidence": 79
+  },
+  {
+    "time": "2:00 AM - 6:00 AM",
+    "date": "Tomorrow",
+    "expectedVolume": 42,
+    "baselineVolume": 28,
+    "surgeLevel": "elevated",
+    "primaryCauses": ["Overnight emergencies"],
+    "staffingStatus": "adequate",
+    "confidence": 82
+  },
+  {
+    "time": "6:00 AM - 10:00 AM",
+    "date": "Tomorrow",
+    "expectedVolume": 55,
+    "baselineVolume": 35,
+    "surgeLevel": "elevated",
+    "primaryCauses": ["Storm preparation", "Morning rush"],
+    "staffingStatus": "adequate",
+    "confidence": 76
+  },
+  {
+    "time": "10:00 AM - 2:00 PM",
+    "date": "Tomorrow",
+    "expectedVolume": 88,
+    "baselineVolume": 42,
+    "surgeLevel": "critical",
+    "primaryCauses": ["Snowstorm begins", "MVA surge"],
+    "staffingStatus": "critical",
+    "confidence": 89
+  },
+  {
+    "time": "2:00 PM - 6:00 PM",
+    "date": "Tomorrow",
+    "expectedVolume": 110,
+    "baselineVolume": 48,
+    "surgeLevel": "critical",
+    "primaryCauses": ["Peak storm conditions", "Trauma cases"],
+    "staffingStatus": "critical",
+    "confidence": 91
+  },
+  {
+    "time": "6:00 PM - 10:00 PM",
+    "date": "Tomorrow",
+    "expectedVolume": 72,
+    "baselineVolume": 52,
+    "surgeLevel": "high",
+    "primaryCauses": ["Storm aftermath", "Power outages"],
+    "staffingStatus": "shortage",
+    "confidence": 74
+  }
+]

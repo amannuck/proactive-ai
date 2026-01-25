@@ -1,0 +1,80 @@
+[
+  {
+    "id": "1",
+    "title": "FIFA World Cup Final + Extreme Heat",
+    "description": "Major sporting event coinciding with 105°F heat index. Anticipate significant increase in heat-related emergencies and alcohol-related incidents.",
+    "icon": "Sun",
+    "risk": "high",
+    "confidence": 94,
+    "timestamp": "Active now",
+    "expectedImpact": "+45% patient volume",
+    "affectedDepartments": ["ER", "Trauma", "Cardiology"],
+    "predictedCases": 127,
+    "status": "active"
+  },
+  {
+    "id": "2",
+    "title": "Severe Snowstorm Warning",
+    "description": "NWS issued severe winter storm warning. Expected 12-18 inches of snow with icy conditions increasing MVA risk.",
+    "icon": "Snowflake",
+    "risk": "critical",
+    "confidence": 89,
+    "timestamp": "Starts in 6 hours",
+    "expectedImpact": "+60% trauma cases",
+    "affectedDepartments": ["ER", "Trauma", "Orthopedics", "Surgery"],
+    "predictedCases": 85,
+    "status": "active"
+  },
+  {
+    "id": "3",
+    "title": "Flu Outbreak - Regional Spread",
+    "description": "CDC reports elevated influenza activity in the region. Hospital admissions for respiratory issues trending upward.",
+    "icon": "Activity",
+    "risk": "medium",
+    "confidence": 78,
+    "timestamp": "Ongoing - Day 5",
+    "expectedImpact": "+30% respiratory cases",
+    "affectedDepartments": ["ER", "Pulmonology", "Pediatrics"],
+    "predictedCases": 210,
+    "status": "active"
+  },
+  {
+    "id": "4",
+    "title": "Heavy Rainfall & Flash Flood Warning",
+    "description": "Continuous heavy rainfall expected for the next 48 hours. Potential for flash flooding in low-lying areas.",
+    "icon": "CloudRain",
+    "risk": "medium",
+    "confidence": 82,
+    "timestamp": "Starts in 12 hours",
+    "expectedImpact": "+25% trauma cases",
+    "affectedDepartments": ["ER", "Trauma"],
+    "predictedCases": 45,
+    "status": "monitoring"
+  },
+  {
+    "id": "5",
+    "title": "Large Concert Event Downtown",
+    "description": "50,000+ attendees expected at outdoor venue. Increased likelihood of crowd-related injuries and substance issues.",
+    "icon": "Users",
+    "risk": "low",
+    "confidence": 71,
+    "timestamp": "Tomorrow 6 PM",
+    "expectedImpact": "+15% patient volume",
+    "affectedDepartments": ["ER"],
+    "predictedCases": 32,
+    "status": "monitoring"
+  },
+  {
+    "id": "6",
+    "title": "High Wind Advisory",
+    "description": "Winds gusting up to 60 mph expected. Potential for debris-related injuries and power outages.",
+    "icon": "Wind",
+    "risk": "low",
+    "confidence": 85,
+    "timestamp": "Resolved 2 hours ago",
+    "expectedImpact": "+10% trauma cases",
+    "affectedDepartments": ["ER", "Trauma"],
+    "predictedCases": 18,
+    "status": "resolved"
+  }
+]

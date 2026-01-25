@@ -1,0 +1,73 @@
+supplier_id,supplier_name,contract_type,item_sku,item_name,price_per_unit,lead_time_hours,reliability_score,min_order_qty,notes
+SUP-NOR-001,North American Rescue,FIXED_AGREEMENT,TR-KIT-ADV,Advanced Trauma Kit,85.0,72,97,10,Primary vendor. Bulk pricing applied. Auto-renew.
+SUP-QUI-002,QuickShip Medical,SPOT_MARKET,TR-KIT-ADV,Advanced Trauma Kit,119.0,12,90,20,Emergency stock. High shipping fees. Expedited delivery available.
+SUP-EME-002,EmergiMed Supply,SPOT_MARKET,TR-KIT-ADV,Advanced Trauma Kit,136.0,6,88,20,Emergency stock. High shipping fees. Expedited delivery available.
+SUP-CAR-001,Cardinal Health,FIXED_AGREEMENT,OR-SLING,Arm Sling (Universal),6.5,48,99,500,Primary vendor. Bulk pricing applied. Auto-renew.
+SUP-QUI-002,QuickShip Medical,SPOT_MARKET,OR-SLING,Arm Sling (Universal),9.1,12,92,5,Emergency stock. High shipping fees. Expedited delivery available.
+SUP-EME-002,EmergiMed Supply,SPOT_MARKET,OR-SLING,Arm Sling (Universal),10.4,6,90,20,Emergency stock. High shipping fees. Expedited delivery available.
+SUP-CAR-001,Cardinal Health,FIXED_AGREEMENT,BL-O-NEG,Blood Unit (O-Negative),210.0,72,99,10,Primary vendor. Bulk pricing applied. Auto-renew.
+SUP-EME-002,EmergiMed Supply,SPOT_MARKET,BL-O-NEG,Blood Unit (O-Negative),336.0,6,84,10,Emergency stock. High shipping fees. Expedited delivery available.
+SUP-NOR-001,North American Rescue,FIXED_AGREEMENT,TR-C-COLLAR,C-Collar (Adult/Adjustable),12.0,72,99,500,Primary vendor. Bulk pricing applied. Auto-renew.
+SUP-LOC-002,Local Ortho Source,SPOT_MARKET,TR-C-COLLAR,C-Collar (Adult/Adjustable),15.0,24,95,20,Emergency stock. High shipping fees. Expedited delivery available.
+SUP-QUI-002,QuickShip Medical,SPOT_MARKET,TR-C-COLLAR,C-Collar (Adult/Adjustable),16.8,12,91,10,Emergency stock. High shipping fees. Expedited delivery available.
+SUP-NOR-001,North American Rescue,FIXED_AGREEMENT,TR-TOURNIQUET,CAT Tourniquet,28.0,48,99,100,Primary vendor. Bulk pricing applied. Auto-renew.
+SUP-LOC-002,Local Ortho Source,SPOT_MARKET,TR-TOURNIQUET,CAT Tourniquet,35.0,24,93,5,Emergency stock. High shipping fees. Expedited delivery available.
+SUP-EME-002,EmergiMed Supply,SPOT_MARKET,TR-TOURNIQUET,CAT Tourniquet,44.8,6,80,10,Emergency stock. High shipping fees. Expedited delivery available.
+SUP-BAX-001,Baxter Healthcare,FIXED_AGREEMENT,RX-CEFTRIAXONE,Ceftriaxone (1g Vial),8.5,72,96,100,Primary vendor. Bulk pricing applied. Auto-renew.
+SUP-LOC-002,Local Ortho Source,SPOT_MARKET,RX-CEFTRIAXONE,Ceftriaxone (1g Vial),10.62,24,94,20,Emergency stock. High shipping fees. Expedited delivery available.
+SUP-NOR-001,North American Rescue,FIXED_AGREEMENT,TR-CHEST-SEAL,Chest Seal (Occlusive),15.5,48,99,500,Primary vendor. Bulk pricing applied. Auto-renew.
+SUP-QUI-002,QuickShip Medical,SPOT_MARKET,TR-CHEST-SEAL,Chest Seal (Occlusive),21.7,12,92,5,Emergency stock. High shipping fees. Expedited delivery available.
+SUP-EME-002,EmergiMed Supply,SPOT_MARKET,TR-CHEST-SEAL,Chest Seal (Occlusive),24.8,6,89,20,Emergency stock. High shipping fees. Expedited delivery available.
+SUP-MED-001,Medline Corp,FIXED_AGREEMENT,OR-CRUTCHES,Crutches (Aluminum Pair),22.0,48,98,50,Primary vendor. Bulk pricing applied. Auto-renew.
+SUP-QUI-002,QuickShip Medical,SPOT_MARKET,OR-CRUTCHES,Crutches (Aluminum Pair),30.8,12,95,10,Emergency stock. High shipping fees. Expedited delivery available.
+SUP-MED-001,Medline Corp,FIXED_AGREEMENT,GN-DERMABOND,Dermabond Skin Glue,24.0,48,99,500,Primary vendor. Bulk pricing applied. Auto-renew.
+SUP-QUI-002,QuickShip Medical,SPOT_MARKET,GN-DERMABOND,Dermabond Skin Glue,33.6,12,91,5,Emergency stock. High shipping fees. Expedited delivery available.
+SUP-CAR-001,Cardinal Health,FIXED_AGREEMENT,RS-ET-TUBE,Endotracheal Tube (7.5),4.5,48,96,50,Primary vendor. Bulk pricing applied. Auto-renew.
+SUP-EME-002,EmergiMed Supply,SPOT_MARKET,RS-ET-TUBE,Endotracheal Tube (7.5),7.2,6,90,10,Emergency stock. High shipping fees. Expedited delivery available.
+SUP-BAX-001,Baxter Healthcare,FIXED_AGREEMENT,RX-EPI-PEN,Epinephrine Auto-Injector,110.0,48,99,10,Primary vendor. Bulk pricing applied. Auto-renew.
+SUP-LOC-002,Local Ortho Source,SPOT_MARKET,RX-EPI-PEN,Epinephrine Auto-Injector,137.5,24,92,5,Emergency stock. High shipping fees. Expedited delivery available.
+SUP-BAX-001,Baxter Healthcare,FIXED_AGREEMENT,RX-FENTANYL,Fentanyl Citrate (100mcg),5.25,48,97,50,Primary vendor. Bulk pricing applied. Auto-renew.
+SUP-EME-002,EmergiMed Supply,SPOT_MARKET,RX-FENTANYL,Fentanyl Citrate (100mcg),8.4,6,86,10,Emergency stock. High shipping fees. Expedited delivery available.
+SUP-CAR-001,Cardinal Health,FIXED_AGREEMENT,GN-FOLEY-TRAY,Foley Catheter Tray,14.5,48,99,50,Primary vendor. Bulk pricing applied. Auto-renew.
+SUP-QUI-002,QuickShip Medical,SPOT_MARKET,GN-FOLEY-TRAY,Foley Catheter Tray,20.3,12,95,20,Emergency stock. High shipping fees. Expedited delivery available.
+SUP-BAX-001,Baxter Healthcare,FIXED_AGREEMENT,IV-START-KIT,IV Start Kit (Catheter 18G/20G),3.5,72,99,500,Primary vendor. Bulk pricing applied. Auto-renew.
+SUP-LOC-002,Local Ortho Source,SPOT_MARKET,IV-START-KIT,IV Start Kit (Catheter 18G/20G),4.38,24,95,20,Emergency stock. High shipping fees. Expedited delivery available.
+SUP-QUI-002,QuickShip Medical,SPOT_MARKET,IV-START-KIT,IV Start Kit (Catheter 18G/20G),4.9,12,95,10,Emergency stock. High shipping fees. Expedited delivery available.
+SUP-BAX-001,Baxter Healthcare,FIXED_AGREEMENT,RX-INSULIN,Insulin Lantus (Vial),180.0,48,97,10,Primary vendor. Bulk pricing applied. Auto-renew.
+SUP-LOC-002,Local Ortho Source,SPOT_MARKET,RX-INSULIN,Insulin Lantus (Vial),225.0,24,93,20,Emergency stock. High shipping fees. Expedited delivery available.
+SUP-EME-002,EmergiMed Supply,SPOT_MARKET,RX-INSULIN,Insulin Lantus (Vial),288.0,6,89,20,Emergency stock. High shipping fees. Expedited delivery available.
+SUP-CAR-001,Cardinal Health,FIXED_AGREEMENT,OR-KNEE-IMMOB,Knee Immobilizer,45.0,72,98,500,Primary vendor. Bulk pricing applied. Auto-renew.
+SUP-QUI-002,QuickShip Medical,SPOT_MARKET,OR-KNEE-IMMOB,Knee Immobilizer,63.0,12,86,10,Emergency stock. High shipping fees. Expedited delivery available.
+SUP-EME-002,EmergiMed Supply,SPOT_MARKET,OR-KNEE-IMMOB,Knee Immobilizer,72.0,6,81,10,Emergency stock. High shipping fees. Expedited delivery available.
+SUP-CAR-001,Cardinal Health,FIXED_AGREEMENT,GN-SUTURE-KIT,Laceration Tray (Sutures),18.0,48,99,50,Primary vendor. Bulk pricing applied. Auto-renew.
+SUP-LOC-002,Local Ortho Source,SPOT_MARKET,GN-SUTURE-KIT,Laceration Tray (Sutures),22.5,24,93,20,Emergency stock. High shipping fees. Expedited delivery available.
+SUP-QUI-002,QuickShip Medical,SPOT_MARKET,GN-SUTURE-KIT,Laceration Tray (Sutures),25.2,12,94,5,Emergency stock. High shipping fees. Expedited delivery available.
+SUP-BAX-001,Baxter Healthcare,FIXED_AGREEMENT,IV-LR-1000,Lactated Ringer's 1L,2.5,72,96,100,Primary vendor. Bulk pricing applied. Auto-renew.
+SUP-EME-002,EmergiMed Supply,SPOT_MARKET,IV-LR-1000,Lactated Ringer's 1L,4.0,6,81,20,Emergency stock. High shipping fees. Expedited delivery available.
+SUP-BAX-001,Baxter Healthcare,FIXED_AGREEMENT,RX-MORPHINE,Morphine Sulfate (10mg/ml),4.5,48,98,100,Primary vendor. Bulk pricing applied. Auto-renew.
+SUP-LOC-002,Local Ortho Source,SPOT_MARKET,RX-MORPHINE,Morphine Sulfate (10mg/ml),5.62,24,88,10,Emergency stock. High shipping fees. Expedited delivery available.
+SUP-CAR-001,Cardinal Health,FIXED_AGREEMENT,RS-NEB-KIT,Nebulizer Kit (Mask+Tubing),2.75,48,97,50,Primary vendor. Bulk pricing applied. Auto-renew.
+SUP-QUI-002,QuickShip Medical,SPOT_MARKET,RS-NEB-KIT,Nebulizer Kit (Mask+Tubing),3.85,12,94,5,Emergency stock. High shipping fees. Expedited delivery available.
+SUP-EME-002,EmergiMed Supply,SPOT_MARKET,RS-NEB-KIT,Nebulizer Kit (Mask+Tubing),4.4,6,82,10,Emergency stock. High shipping fees. Expedited delivery available.
+SUP-MED-001,Medline Corp,FIXED_AGREEMENT,RS-O2-MASK-NRB,Non-Rebreather Mask,3.1,72,96,50,Primary vendor. Bulk pricing applied. Auto-renew.
+SUP-LOC-002,Local Ortho Source,SPOT_MARKET,RS-O2-MASK-NRB,Non-Rebreather Mask,3.88,24,93,5,Emergency stock. High shipping fees. Expedited delivery available.
+SUP-BAX-001,Baxter Healthcare,FIXED_AGREEMENT,IV-NS-1000,Normal Saline 1L,2.2,72,96,50,Primary vendor. Bulk pricing applied. Auto-renew.
+SUP-QUI-002,QuickShip Medical,SPOT_MARKET,IV-NS-1000,Normal Saline 1L,3.08,12,85,5,Emergency stock. High shipping fees. Expedited delivery available.
+SUP-EME-002,EmergiMed Supply,SPOT_MARKET,IV-NS-1000,Normal Saline 1L,3.52,6,83,20,Emergency stock. High shipping fees. Expedited delivery available.
+SUP-MED-001,Medline Corp,FIXED_AGREEMENT,RS-OXY-TANK-E,Oxygen Tank (Size E Refill),18.0,72,98,100,Primary vendor. Bulk pricing applied. Auto-renew.
+SUP-QUI-002,QuickShip Medical,SPOT_MARKET,RS-OXY-TANK-E,Oxygen Tank (Size E Refill),25.2,12,87,5,Emergency stock. High shipping fees. Expedited delivery available.
+SUP-NOR-001,North American Rescue,FIXED_AGREEMENT,TR-PELVIC-BIND,Pelvic Binder,65.0,48,99,10,Primary vendor. Bulk pricing applied. Auto-renew.
+SUP-LOC-002,Local Ortho Source,SPOT_MARKET,TR-PELVIC-BIND,Pelvic Binder,81.25,24,90,10,Emergency stock. High shipping fees. Expedited delivery available.
+SUP-QUI-002,QuickShip Medical,SPOT_MARKET,TR-PELVIC-BIND,Pelvic Binder,91.0,12,95,20,Emergency stock. High shipping fees. Expedited delivery available.
+SUP-CAR-001,Cardinal Health,FIXED_AGREEMENT,OR-PLASTER-ROLL,Plaster Rolls (6 inch),8.5,48,97,500,Primary vendor. Bulk pricing applied. Auto-renew.
+SUP-EME-002,EmergiMed Supply,SPOT_MARKET,OR-PLASTER-ROLL,Plaster Rolls (6 inch),13.6,6,86,20,Emergency stock. High shipping fees. Expedited delivery available.
+SUP-NOR-001,North American Rescue,FIXED_AGREEMENT,TR-SPLINT-SAM,SAM Splint (36 inch),14.0,48,97,100,Primary vendor. Bulk pricing applied. Auto-renew.
+SUP-LOC-002,Local Ortho Source,SPOT_MARKET,TR-SPLINT-SAM,SAM Splint (36 inch),17.5,24,90,10,Emergency stock. High shipping fees. Expedited delivery available.
+SUP-MED-001,Medline Corp,FIXED_AGREEMENT,OR-TENSOR-BAND,Tensor Bandage,4.25,48,97,50,Primary vendor. Bulk pricing applied. Auto-renew.
+SUP-QUI-002,QuickShip Medical,SPOT_MARKET,OR-TENSOR-BAND,Tensor Bandage,5.95,12,87,20,Emergency stock. High shipping fees. Expedited delivery available.
+SUP-EME-002,EmergiMed Supply,SPOT_MARKET,OR-TENSOR-BAND,Tensor Bandage,6.8,6,86,5,Emergency stock. High shipping fees. Expedited delivery available.
+SUP-MED-001,Medline Corp,FIXED_AGREEMENT,GN-WARM-BLANKET,Warming Blanket (Bair Hugger),12.0,48,96,500,Primary vendor. Bulk pricing applied. Auto-renew.
+SUP-LOC-002,Local Ortho Source,SPOT_MARKET,GN-WARM-BLANKET,Warming Blanket (Bair Hugger),15.0,24,91,20,Emergency stock. High shipping fees. Expedited delivery available.
+SUP-BAX-001,Baxter Healthcare,FIXED_AGREEMENT,RX-TPA,tPA (Alteplase 100mg),6500.0,72,98,10,Primary vendor. Bulk pricing applied. Auto-renew.
+SUP-LOC-002,Local Ortho Source,SPOT_MARKET,RX-TPA,tPA (Alteplase 100mg),8125.0,24,92,5,Emergency stock. High shipping fees. Expedited delivery available.
+SUP-EME-002,EmergiMed Supply,SPOT_MARKET,RX-TPA,tPA (Alteplase 100mg),10400.0,6,80,5,Emergency stock. High shipping fees. Expedited delivery available.

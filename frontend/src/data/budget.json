@@ -1,0 +1,32 @@
+{
+  "defaultAnnualBudget": 500000,
+  "historicalSpending": [
+    { "month": "Jan", "remaining": 500000, "spent": 0 },
+    { "month": "Feb", "remaining": 458000, "spent": 42000 },
+    { "month": "Mar", "remaining": 419000, "spent": 39000 },
+    { "month": "Apr", "remaining": 382000, "spent": 37000 },
+    { "month": "May", "remaining": 347000, "spent": 35000 },
+    { "month": "Jun", "remaining": 310000, "spent": 37000 },
+    { "month": "Jul", "remaining": 272000, "spent": 38000 },
+    { "month": "Aug", "remaining": 236000, "spent": 36000 },
+    { "month": "Sep", "remaining": 198000, "spent": 38000 },
+    { "month": "Oct", "remaining": 162000, "spent": 36000 },
+    { "month": "Nov", "remaining": 124000, "spent": 38000 },
+    { "month": "Dec", "remaining": 85000, "spent": 39000 }
+  ],
+  "currentYearSpending": [
+    { "month": "Jan", "remaining": 500000, "spent": 0 },
+    { "month": "Feb", "remaining": 465500, "spent": 34500 },
+    { "month": "Mar", "remaining": 428000, "spent": 37500 },
+    { "month": "Apr", "remaining": 392500, "spent": 35500 },
+    { "month": "May", "remaining": 358000, "spent": 34500 },
+    { "month": "Jun", "remaining": 325000, "spent": 33000 },
+    { "month": "Jul", "remaining": 292000, "spent": 33000 },
+    { "month": "Aug", "remaining": 260000, "spent": 32000 },
+    { "month": "Sep", "remaining": 228000, "spent": 32000 },
+    { "month": "Oct", "remaining": 196000, "spent": 32000 },
+    { "month": "Nov", "remaining": 164000, "spent": 32000 },
+    { "month": "Dec", "remaining": 132000, "spent": 32000 }
+  ],
+  "currentMonth": 1
+}

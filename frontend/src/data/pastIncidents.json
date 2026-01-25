@@ -1,0 +1,110 @@
+[
+  {
+    "event_id": "INC-2024-001",
+    "event_type": "Snowstorm",
+    "severity_index": 8,
+    "date": "2024-02-14",
+    "patient_volume_spike": 35,
+    "top_clinical_categories": ["Orthopedic Trauma", "MVA Injuries", "Hypothermia"],
+    "critical_supplies_depleted": ["Plaster Casts", "Pain Management IVs", "Warming Blankets"]
+  },
+  {
+    "event_id": "INC-2023-002",
+    "event_type": "Sports Championship",
+    "severity_index": 9,
+    "date": "2023-07-15",
+    "patient_volume_spike": 20,
+    "top_clinical_categories": ["Alcohol Poisoning", "Minor Lacerations", "Dehydration"],
+    "critical_supplies_depleted": ["IV Saline", "Sutures", "Activated Charcoal"]
+  },
+  {
+    "event_id": "INC-2023-003",
+    "event_type": "Heatwave",
+    "severity_index": 7,
+    "date": "2023-08-22",
+    "patient_volume_spike": 42,
+    "top_clinical_categories": ["Heat Exhaustion", "Dehydration", "Cardiac Events"],
+    "critical_supplies_depleted": ["IV Fluids", "Cooling Packs", "Electrolyte Solutions"]
+  },
+  {
+    "event_id": "INC-2023-004",
+    "event_type": "Flu Season Peak",
+    "severity_index": 6,
+    "date": "2023-12-18",
+    "patient_volume_spike": 28,
+    "top_clinical_categories": ["Respiratory Infections", "Pneumonia", "Fever Management"],
+    "critical_supplies_depleted": ["N95 Masks", "Antivirals", "Oxygen Supplies"]
+  },
+  {
+    "event_id": "INC-2023-005",
+    "event_type": "Ice Storm",
+    "severity_index": 9,
+    "date": "2023-01-10",
+    "patient_volume_spike": 45,
+    "top_clinical_categories": ["Fall Injuries", "MVA Trauma", "Fractures"],
+    "critical_supplies_depleted": ["Casts", "X-Ray Film", "Splints", "Pain Medications"]
+  },
+  {
+    "event_id": "INC-2022-006",
+    "event_type": "Music Festival",
+    "severity_index": 5,
+    "date": "2022-06-25",
+    "patient_volume_spike": 18,
+    "top_clinical_categories": ["Drug Overdose", "Dehydration", "Minor Injuries"],
+    "critical_supplies_depleted": ["Naloxone", "IV Saline", "Bandages"]
+  },
+  {
+    "event_id": "INC-2022-007",
+    "event_type": "Tornado",
+    "severity_index": 10,
+    "date": "2022-05-03",
+    "patient_volume_spike": 65,
+    "top_clinical_categories": ["Major Trauma", "Lacerations", "Crush Injuries"],
+    "critical_supplies_depleted": ["Blood Products", "Trauma Kits", "Sutures", "Antibiotics"]
+  },
+  {
+    "event_id": "INC-2022-008",
+    "event_type": "Holiday Weekend",
+    "severity_index": 4,
+    "date": "2022-07-04",
+    "patient_volume_spike": 15,
+    "top_clinical_categories": ["Burns", "Alcohol Intoxication", "Minor Trauma"],
+    "critical_supplies_depleted": ["Burn Dressings", "IV Fluids", "Pain Management"]
+  },
+  {
+    "event_id": "INC-2022-009",
+    "event_type": "COVID-19 Surge",
+    "severity_index": 8,
+    "date": "2022-01-15",
+    "patient_volume_spike": 55,
+    "top_clinical_categories": ["Respiratory Failure", "Pneumonia", "Sepsis"],
+    "critical_supplies_depleted": ["Ventilator Supplies", "PPE", "Oxygen", "Sedatives"]
+  },
+  {
+    "event_id": "INC-2021-010",
+    "event_type": "Marathon Event",
+    "severity_index": 3,
+    "date": "2021-10-10",
+    "patient_volume_spike": 12,
+    "top_clinical_categories": ["Dehydration", "Heat Exhaustion", "Muscle Injuries"],
+    "critical_supplies_depleted": ["IV Saline", "Electrolytes", "Ice Packs"]
+  },
+  {
+    "event_id": "INC-2021-011",
+    "event_type": "Wildfire Smoke",
+    "severity_index": 6,
+    "date": "2021-09-05",
+    "patient_volume_spike": 30,
+    "top_clinical_categories": ["Respiratory Distress", "Asthma Exacerbation", "COPD Flare"],
+    "critical_supplies_depleted": ["Inhalers", "Nebulizers", "Oxygen", "Steroids"]
+  },
+  {
+    "event_id": "INC-2021-012",
+    "event_type": "New Year's Eve",
+    "severity_index": 7,
+    "date": "2021-12-31",
+    "patient_volume_spike": 25,
+    "top_clinical_categories": ["Alcohol Poisoning", "Assault Injuries", "Firework Burns"],
+    "critical_supplies_depleted": ["Sutures", "Burn Kits", "IV Fluids", "Activated Charcoal"]
+  }
+]

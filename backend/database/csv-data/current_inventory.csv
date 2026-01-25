@@ -1,0 +1,32 @@
+sku_id,item_name,category,current_stock,par_level,burn_rate_daily,location,status
+OR-PLASTER-ROLL,Plaster Rolls (6 inch),Orthopedics,16,120,45,Cast Room,Critical
+GN-WARM-BLANKET,Warming Blanket (Bair Hugger),Patient Care,19,120,18,Linen Services,Critical
+RS-OXY-TANK-E,Oxygen Tank (Size E Refill),Respiratory,6,40,15,Main Storage,Critical
+TR-KIT-ADV,Advanced Trauma Kit,Trauma Supplies,8,50,18,Trauma Bay A,Critical
+BL-O-NEG,Blood Unit (O-Negative),Blood Bank,16,20,3,Blood Fridge,Healthy
+IV-NS-1000,Normal Saline 1L,IV Fluids,1074,1000,150,Central Supply,Healthy
+IV-LR-1000,Lactated Ringer's 1L,IV Fluids,776,800,120,Central Supply,Healthy
+IV-START-KIT,IV Start Kit (Catheter 18G/20G),IV Fluids,1027,1500,225,Clean Utility,Healthy
+RX-MORPHINE,Morphine Sulfate (10mg/ml),Medications,122,200,30,Pyxis Machine,Healthy
+RX-FENTANYL,Fentanyl Citrate (100mcg),Medications,145,150,22,Pyxis Machine,Healthy
+RX-EPI-PEN,Epinephrine Auto-Injector,Medications,34,50,7,Crash Cart,Healthy
+RX-INSULIN,Insulin Lantus (Vial),Medications,31,30,4,Pharmacy Fridge,Healthy
+RX-CEFTRIAXONE,Ceftriaxone (1g Vial),Medications,95,100,15,Pyxis Machine,Healthy
+RX-TPA,tPA (Alteplase 100mg),Medications,3,5,0,Stroke Kit,Healthy
+OR-TENSOR-BAND,Tensor Bandage,Orthopedics,127,200,75,Fast Track,Healthy
+OR-CRUTCHES,Crutches (Aluminum Pair),Orthopedics,49,50,18,Discharge Lounge,Healthy
+OR-SLING,Arm Sling (Universal),Orthopedics,79,100,37,Fast Track,Healthy
+OR-KNEE-IMMOB,Knee Immobilizer,Orthopedics,35,40,15,Orthopedics,Healthy
+PPE-N95-MASKS,N95 Respirator Mask,PPE,4730,5000,750,Main Storage,Healthy
+PPE-GLOVES-L,Surgical Gloves (L),PPE,6453,10000,1500,Main Storage,Healthy
+GN-FOLEY-TRAY,Foley Catheter Tray,Patient Care,93,100,15,Clean Utility,Healthy
+RS-O2-MASK-NRB,Non-Rebreather Mask,Respiratory,251,300,112,Respiratory Cart,Healthy
+RS-ET-TUBE,Endotracheal Tube (7.5),Respiratory,68,100,37,Airway Cart,Healthy
+RS-NEB-KIT,Nebulizer Kit (Mask+Tubing),Respiratory,261,250,93,Respiratory Cart,Healthy
+GN-SUTURE-KIT,Laceration Tray (Sutures),Surgical Supplies,124,150,22,Suture Cart,Healthy
+GN-DERMABOND,Dermabond Skin Glue,Surgical Supplies,64,80,12,Suture Cart,Healthy
+TR-CHEST-SEAL,Chest Seal (Occlusive),Trauma Supplies,65,60,22,Trauma Bay A,Healthy
+TR-PELVIC-BIND,Pelvic Binder,Trauma Supplies,20,20,7,Trauma Bay B,Healthy
+TR-TOURNIQUET,CAT Tourniquet,Trauma Supplies,99,100,37,Trauma Bay A/B,Healthy
+TR-SPLINT-SAM,SAM Splint (36 inch),Trauma Supplies,64,80,30,Orthopedics,Healthy
+TR-C-COLLAR,C-Collar (Adult/Adjustable),Trauma Supplies,105,150,56,Triage,Healthy

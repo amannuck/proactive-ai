@@ -1,0 +1,79 @@
+[
+  {
+    "id": "1",
+    "item": "IV Fluid Bags (Lactated Ringer's)",
+    "quantity": 500,
+    "unit": "units",
+    "supplier": "MedSupply Direct",
+    "cost": 2500,
+    "status": "auto-ordered",
+    "date": "Today, 2:30 PM",
+    "reason": "Anticipated dehydration cases"
+  },
+  {
+    "id": "2",
+    "item": "Advanced Trauma Kits",
+    "quantity": 25,
+    "unit": "kits",
+    "supplier": "Pending Selection",
+    "cost": 8750,
+    "status": "pending",
+    "date": "Today, 1:15 PM",
+    "reason": "Predicted MVA surge"
+  },
+  {
+    "id": "3",
+    "item": "N95 Respirator Masks",
+    "quantity": 2000,
+    "unit": "units",
+    "supplier": "Pending Selection",
+    "cost": 1200,
+    "status": "pending",
+    "date": "Today, 11:00 AM",
+    "reason": "Flu outbreak protection"
+  },
+  {
+    "id": "4",
+    "item": "Portable Cooling Blankets",
+    "quantity": 15,
+    "unit": "units",
+    "supplier": "Healthcare Essentials",
+    "cost": 4500,
+    "status": "approved",
+    "date": "Yesterday",
+    "reason": "Heat stroke treatment"
+  },
+  {
+    "id": "5",
+    "item": "Oxygen Tanks (Size E)",
+    "quantity": 30,
+    "unit": "tanks",
+    "supplier": "Regional Medical Supply",
+    "cost": 3600,
+    "status": "approved",
+    "date": "2 days ago",
+    "reason": "Respiratory surge prep"
+  },
+  {
+    "id": "6",
+    "item": "Surgical Suture Kits",
+    "quantity": 100,
+    "unit": "kits",
+    "supplier": "MedSupply Direct",
+    "cost": 1500,
+    "status": "auto-ordered",
+    "date": "3 days ago",
+    "reason": "Standard restock"
+  },
+  {
+    "id": "7",
+    "item": "Blood Pressure Cuffs",
+    "quantity": 20,
+    "unit": "units",
+    "supplier": "Healthcare Essentials",
+    "cost": 600,
+    "status": "rejected",
+    "date": "4 days ago",
+    "reason": "Budget constraints"
+  }
+]
