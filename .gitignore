@@ -1,4 +1,52 @@
-./frontend/node_modules
-./frontend/.env
+# Dependencies
+node_modules/
+*/node_modules
+*/node_modules/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+frontend/.env
+backend/.env
+
+# Build outputs
+dist/
+build/
+*/dist
+*/build
 ./frontend/dist
-./backend/node_modules
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+forecasting.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Testing
+coverage/
+.nyc_output/
+
+# Misc
+.cache/
+temp/
+tmp/
