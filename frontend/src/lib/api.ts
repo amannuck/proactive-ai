@@ -1,4 +1,4 @@
-const API_BASE_URL = 'https://proactive-pulse-backend.onrender.com/';
+const API_BASE_URL = 'https://proactive-pulse-backend.onrender.com';
 
 async function fetchApi<T>(endpoint: string, options?: RequestInit): Promise<T> {
   const response = await fetch(`${API_BASE_URL}${endpoint}`, {
