@@ -245,9 +245,9 @@ export function getSupplierOptionsForSku(skuId: string): SupplierComparisonRow[]
 }
 
 // Update supplier on a pending purchase
-export function updatePendingPurchaseSupplier(pendingId: number, newSupplierId: string): boolean {
+export function updatePendingPurchaseSupplier(pendingId: number, newSupplierId: string, quantity?: number): boolean {
   // Get the SKU for this pending purchase
-  const getSkuStmt = db.prepare('SELECT sku_id FROM pending_purchases WHERE id = ? AND status = "pending"');
+  const getSkuStmt = db.prepare("SELECT sku_id FROM pending_purchases WHERE id = ? AND status = 'pending'");
   const result = getSkuStmt.get(pendingId) as { sku_id: string } | undefined;
   
   if (!result) {
@@ -270,11 +270,11 @@ export function updatePendingPurchaseSupplier(pendingId: number, newSupplierId: 
   // Update the pending purchase
   const updateStmt = db.prepare(`
     UPDATE pending_purchases 
-    SET supplier_id = ?, unit_price = ?, updated_at = datetime('now')
+    SET supplier_id = ?, unit_price = ?, quantity = COALESCE(?, quantity), updated_at = datetime('now')
     WHERE id = ? AND status = 'pending'
   `);
   
-  const updateResult = updateStmt.run(newSupplierId, priceResult.price_per_unit, pendingId);
+  const updateResult = updateStmt.run(newSupplierId, priceResult.price_per_unit, quantity ?? null, pendingId);
   return updateResult.changes > 0;
 }
 

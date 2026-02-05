@@ -317,9 +317,9 @@ export function getSupplierOptionsForPurchase(purchaseId: number): Promise<Suppl
   return fetchApi(`/api/ui/purchases/${purchaseId}/supplier-options`);
 }
 
-export function updatePurchaseSupplier(purchaseId: number, supplierId: string): Promise<{ message: string }> {
+export function updatePurchaseSupplier(purchaseId: number, supplierId: string, quantity?: number): Promise<{ message: string }> {
   return fetchApi(`/api/ui/purchases/${purchaseId}/update-supplier`, {
     method: 'POST',
-    body: JSON.stringify({ supplier_id: supplierId }),
+    body: JSON.stringify({ supplier_id: supplierId, quantity }),
   });
 }

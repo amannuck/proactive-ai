@@ -329,7 +329,7 @@ router.get('/purchases/:id/supplier-options', (req, res) => {
 // Update supplier on a pending purchase
 router.post('/purchases/:id/update-supplier', (req, res) => {
   const id = parseInt(req.params.id);
-  const { supplier_id } = req.body;
+  const { supplier_id, quantity } = req.body;
 
   if (isNaN(id)) {
     return res.status(400).json({ error: 'Invalid purchase ID' });
@@ -339,8 +339,16 @@ router.post('/purchases/:id/update-supplier', (req, res) => {
     return res.status(400).json({ error: 'Missing required field: supplier_id' });
   }
 
+  const parsedQuantity = quantity === undefined || quantity === null || quantity === ''
+    ? undefined
+    : Number(quantity);
+
+  if (parsedQuantity !== undefined && (!Number.isFinite(parsedQuantity) || parsedQuantity <= 0)) {
+    return res.status(400).json({ error: 'Invalid quantity' });
+  }
+
   try {
-    const success = updatePendingPurchaseSupplier(id, supplier_id);
+    const success = updatePendingPurchaseSupplier(id, supplier_id, parsedQuantity);
     if (!success) {
       return res.status(404).json({ error: 'Pending purchase not found or supplier not available' });
     }

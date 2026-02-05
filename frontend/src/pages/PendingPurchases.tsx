@@ -8,6 +8,7 @@ import { useToast } from "@/hooks/use-toast";
 import { useBudget } from "@/contexts/BudgetContext";
 import { useApi } from "@/hooks/useApi";
 import { getPendingPurchases, approvePurchase, rejectPurchase, PendingPurchaseRow, getSupplierOptionsForPurchase, updatePurchaseSupplier, SupplierComparisonRow } from "@/lib/api";
+import { Input } from "@/components/ui/input";
 import {
   Dialog,
   DialogContent,
@@ -32,6 +33,7 @@ const PendingPurchases = () => {
   const [supplierOptions, setSupplierOptions] = useState<SupplierComparisonRow[]>([]);
   const [loadingSuppliers, setLoadingSuppliers] = useState(false);
   const [changingSupplier, setChangingSupplier] = useState(false);
+  const [desiredQuantity, setDesiredQuantity] = useState<string>("");
 
   const pendingList = purchases || [];
   const totalPending = pendingList.length;
@@ -86,6 +88,7 @@ const PendingPurchases = () => {
 
   const openSupplierComparison = async (purchase: PendingPurchaseRow) => {
     setSelectedPurchase(purchase);
+    setDesiredQuantity(String(purchase.quantity ?? ""));
     setSupplierDialogOpen(true);
     setLoadingSuppliers(true);
     
@@ -106,10 +109,20 @@ const PendingPurchases = () => {
 
   const handleChangeSupplier = async (supplierId: string) => {
     if (!selectedPurchase) return;
+
+    const parsedQty = desiredQuantity.trim() === "" ? undefined : Number(desiredQuantity);
+    if (parsedQty !== undefined && (!Number.isFinite(parsedQty) || parsedQty <= 0)) {
+      toast({
+        title: "Invalid Quantity",
+        description: "Please enter a quantity greater than 0.",
+        variant: "destructive",
+      });
+      return;
+    }
     
     setChangingSupplier(true);
     try {
-      await updatePurchaseSupplier(selectedPurchase.id, supplierId);
+      await updatePurchaseSupplier(selectedPurchase.id, supplierId, parsedQty);
       toast({
         title: "Supplier Updated",
         description: "Supplier has been changed successfully.",
@@ -119,7 +132,7 @@ const PendingPurchases = () => {
     } catch (err) {
       toast({
         title: "Error",
-        description: "Failed to update supplier",
+        description: err instanceof Error ? err.message : "Failed to update supplier",
         variant: "destructive",
       });
     } finally {
@@ -312,6 +325,17 @@ const PendingPurchases = () => {
                         {selectedPurchase?.unit_price ? formatCurrencyCompact(selectedPurchase.unit_price) : '-'}
                       </span>
                     </div>
+                  </div>
+                  <div className="mt-3">
+                    <label className="text-xs font-medium text-muted-foreground">Desired Quantity</label>
+                    <Input
+                      type="number"
+                      inputMode="numeric"
+                      min={1}
+                      value={desiredQuantity}
+                      onChange={(e) => setDesiredQuantity(e.target.value)}
+                      className="mt-1 w-40"
+                    />
                   </div>
                 </div>
 
