@@ -25,9 +25,10 @@ export interface PaginatedResult<T> {
   totalPages: number;
 }
 
-const getPatientCountStmt = db.prepare(`
-  SELECT COUNT(*) as count FROM fact_encounter
-`);
+// Cached total estimate - updated periodically instead of on every request
+let cachedTotal: number | null = null;
+let lastCountTime = 0;
+const COUNT_CACHE_TTL = 5 * 60 * 1000; // 5 minutes
 
 const getPatientsStmt = db.prepare(`
   SELECT 
@@ -50,10 +51,23 @@ const getPatientsStmt = db.prepare(`
   LIMIT ? OFFSET ?
 `);
 
+function getCachedTotal(): number {
+  const now = Date.now();
+  // Use cached value if recent
+  if (cachedTotal !== null && (now - lastCountTime) < COUNT_CACHE_TTL) {
+    return cachedTotal;
+  }
+  
+  // Refresh cache
+  const countResult = db.prepare('SELECT COUNT(*) as count FROM fact_encounter').get() as { count: number };
+  cachedTotal = countResult.count;
+  lastCountTime = now;
+  return cachedTotal;
+}
+
 export function getPatients(page: number = 1, limit: number = 20): PaginatedResult<PatientRow> {
   const offset = (page - 1) * limit;
-  const countResult = getPatientCountStmt.get() as { count: number };
-  const total = countResult.count;
+  const total = getCachedTotal();
   const data = getPatientsStmt.all(limit, offset) as PatientRow[];
   
   return {
@@ -65,12 +79,6 @@ export function getPatients(page: number = 1, limit: number = 20): PaginatedResu
   };
 }
 
-const getPatientsByDateRangeCountStmt = db.prepare(`
-  SELECT COUNT(*) as count 
-  FROM fact_encounter
-  WHERE date(ts_admit) >= ? AND date(ts_admit) <= ?
-`);
-
 export function getPatientsByDateRange(
   from: string,
   to: string,
@@ -79,10 +87,17 @@ export function getPatientsByDateRange(
 ): PaginatedResult<PatientRow> {
   const offset = (page - 1) * limit;
   
-  const countResult = getPatientsByDateRangeCountStmt.get(from, to) as { count: number };
+  // First, get the data while counting results in same pass
+  const countStmt = db.prepare(`
+    SELECT COUNT(*) as count 
+    FROM fact_encounter
+    WHERE date(ts_admit) >= ? AND date(ts_admit) <= ?
+  `);
+  
+  const countResult = countStmt.get(from, to) as { count: number };
   const total = countResult.count;
   
-  const query = db.prepare(`
+  const dataStmt = db.prepare(`
     SELECT 
       encounter_id,
       ohip_number,
@@ -104,7 +119,7 @@ export function getPatientsByDateRange(
     LIMIT ? OFFSET ?
   `);
   
-  const data = query.all(from, to, limit, offset) as PatientRow[];
+  const data = dataStmt.all(from, to, limit, offset) as PatientRow[];
   
   return {
     data,
