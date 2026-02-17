@@ -156,20 +156,12 @@ router.get('/patients', (req, res) => {
   const from = req.query.from as string;
   const to = req.query.to as string;
 
-  const startTime = Date.now();
-
   try {
     const data = from && to 
       ? getPatientsByDateRange(from, to, page, limit)
       : getPatients(page, limit);
-    
-    const duration = Date.now() - startTime;
-    console.log(`[PATIENTS] page=${page} limit=${limit} from=${from} to=${to} duration=${duration}ms count=${data.total}`);
-    
     res.json(data);
   } catch (error) {
-    const duration = Date.now() - startTime;
-    console.error(`[PATIENTS] Error after ${duration}ms:`, error);
     res.status(500).json({ error: 'Failed to fetch patients', details: String(error) });
   }
 });

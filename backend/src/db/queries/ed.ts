@@ -52,6 +52,12 @@ export interface PaginatedResult<T> {
   totalPages: number;
 }
 
+const getEDHourlyCountStmt = db.prepare(`
+  SELECT COUNT(*) as count 
+  FROM fact_ed_hourly
+  WHERE date >= ? AND date <= ?
+`);
+
 export function getEDHourlyPaginated(
   from: string,
   to: string,
@@ -60,14 +66,10 @@ export function getEDHourlyPaginated(
 ): PaginatedResult<EDHourlyRow> {
   const offset = (page - 1) * limit;
   
-  const countResult = db.prepare(`
-    SELECT COUNT(*) as count 
-    FROM fact_ed_hourly
-    WHERE date >= ? AND date <= ?
-  `).get(from, to) as { count: number };
+  const countResult = getEDHourlyCountStmt.get(from, to) as { count: number };
   const total = countResult.count;
   
-  const data = db.prepare(`
+  const query = db.prepare(`
     SELECT 
       ts,
       date,
@@ -88,7 +90,9 @@ export function getEDHourlyPaginated(
     WHERE date >= ? AND date <= ?
     ORDER BY date DESC, hour DESC
     LIMIT ? OFFSET ?
-  `).all(from, to, limit, offset) as EDHourlyRow[];
+  `);
+  
+  const data = query.all(from, to, limit, offset) as EDHourlyRow[];
   
   return {
     data,
